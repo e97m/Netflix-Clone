@@ -1,0 +1,28 @@
+*{
+    font-size: 1.5vw; 
+}
+
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 10vw;
+    background-color: #0D1117;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    background-color: #0D1117;
+}
+
+.contImg {
+    object-fit: scale-down;
+    width: 3vw;
+    background-color: #0D1117;
+}
+
+.auther {
+    background-color: #0D1117;
+}
