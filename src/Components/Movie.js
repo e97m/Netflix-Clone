@@ -30,7 +30,7 @@ function Movie({ card ,updateCaption }) {
                 }
             </CardGroup>
 
-            {showModal && <ModaleMovie show={showModal} movie={movie} handleColse={() => { setShowModal(false) }} updateCaption={updateCaption} />}
+            {showModal && <ModaleMovie show={showModal} movie={movie} handleClose={() => { setShowModal(false) }} updateCaption={updateCaption} />}
         </div>
     )
 }
