@@ -10,7 +10,7 @@ function MoviesList({ moviesData, updateCaption }) {
             {
                 moviesData.map(element => (
                     <div key={element.id}>
-                        <Movie card={element} updateCaption={moviesData.updateCaption} />
+                        <Movie card={element} updateCaption={updateCaption} />
                     </div>
                 ))
             }

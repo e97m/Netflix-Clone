@@ -7,7 +7,6 @@ function ModaleMovie(props) {
     function handleCaption(e) {
         e.preventDefault()
         const userCaption = commentRef.current.value;
-        ;
         const newData = { ...props.movie, userCaption };
         props.updateCaption(newData, props.movie.id);
     }
@@ -16,7 +15,7 @@ function ModaleMovie(props) {
 
     return (
         <>
-            <Modal show={props.show} onHide={() => { props.handleColse() }}>
+            <Modal show={props.show} onHide={() => { props.handleClose() }}>
                 <Modal.Header closeButton>
                     <Modal.Title>{props.movie.title}</Modal.Title>
                 </Modal.Header>
@@ -33,7 +32,7 @@ function ModaleMovie(props) {
                     <Button className="addBtn" variant="primary" type="submit" onClick={handleCaption}  >
                         Add a Caption
                     </Button>
-                    <Button variant="secondary" onClick={props.handleColse}>
+                    <Button variant="secondary" onClick={props.handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>
