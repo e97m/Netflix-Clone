@@ -13,18 +13,18 @@ function Home() {
 
     const fetchData = async () => {
         try {
+            // const response = await fetch(`https://movies-emad.herokuapp.com/trending`)
             const response = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=abb2fd3d9eb8c561dbf599a20e3ca490`)
             const data = await response.json();
-            // console.log(data);
             setMovies(data.results);
         } catch (error) {
             console.log("error", error);
         }
     }
 
-    const updateCaptions = (data, id) => {
+    const updateCaption = (data, id) => {
         let updatedMovies = movies.map(element => {
-            if (element.id == id) {
+            if (element.id === id) {
                 element.caption = data.userCaption;
                 return element;
             }
@@ -40,7 +40,7 @@ function Home() {
                 {movies && (
                     <Container fluid className="main-container">
                         <Row className="flex-row">
-                            <MoviesList moviesData={movies} updateCaption={updateCaptions} />
+                            <MoviesList moviesData={movies} updateCaption={updateCaption} />
                         </Row>
                     </Container>)}
             </main>
