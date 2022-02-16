@@ -22,7 +22,7 @@ function ModaleMovie(props) {
                 },
                 body: JSON.stringify({
                     title: oneMovie.title,
-                    image: `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${oneMovie.poster_path}`,
+                    poster_path: `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${oneMovie.poster_path}`,
                     overview: oneMovie.overview,
                     comment: oneMovie.caption,
                 })

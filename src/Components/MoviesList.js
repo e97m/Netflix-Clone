@@ -11,7 +11,9 @@ function MoviesList({ moviesData, updateCaption }) {
             {
                 moviesData.map(element => (
                     <div key={element.id}>
+                        <br/>
                         <Movie card={element} updateCaption={updateCaption} />
+                        <br/>
                     </div>
                 ))
             }

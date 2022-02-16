@@ -16,7 +16,7 @@ function Movie({ card ,updateCaption }) {
                     <div key={card.id} className="movieCard">
                         <Card key={card.id} >
                             <Card.Img variant="top" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${card.poster_path}`}/>
-                            <Card.Body>
+                            <Card.Body className="cardBody">
                                 <Card.Title>{card.title}</Card.Title>
                                 <Card.Text>
                                     {card.overview }

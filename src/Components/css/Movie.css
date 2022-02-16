@@ -3,3 +3,7 @@
     width: 22vw;
 }
 
+.cardBody{
+    background-color: #212529;
+    color: white;
+}
