@@ -1,6 +1,7 @@
 import { React } from 'react'
 import Movie from './Movie';
 
+
 function MoviesList({ moviesData, updateCaption }) {
 
     // console.log(moviesData)
@@ -11,6 +12,8 @@ function MoviesList({ moviesData, updateCaption }) {
                 moviesData.map(element => (
                     <div key={element.id}>
                         <Movie card={element} updateCaption={updateCaption} />
+                        {/* <br/>
+                        <br/> */}
                     </div>
                 ))
             }

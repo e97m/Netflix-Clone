@@ -36,14 +36,11 @@ function Home() {
     return (
         <>
             {/* <MoviesList moviesData={movies} /> */}
-            <main>
-                {movies && (
-                    <Container fluid className="main-container">
-                        <Row className="flex-row">
-                            <MoviesList moviesData={movies} updateCaption={updateCaption} />
-                        </Row>
-                    </Container>)}
-            </main>
+            <div className="cards">
+                {movies && (   // 'data' -> true , 'data' && (do somthing) -> somthin done ,,, '' -> false , '' && (do somthing) -> nothing done
+                    <MoviesList moviesData={movies} updateCaption={updateCaption} />
+                )}
+            </div>
         </>
     )
 }
