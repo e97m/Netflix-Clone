@@ -1,7 +1,7 @@
 import './css/Home.css';
 import { React, useEffect, useState } from 'react'
 import MoviesList from './MoviesList'
-import { Row, Container } from "react-bootstrap";
+// import { Row, Container } from "react-bootstrap";
 
 function Home() {
 
