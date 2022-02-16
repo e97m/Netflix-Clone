@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import { Card, CardGroup, Button } from 'react-bootstrap';
 import ModaleMovie from './ModaleMovie';
+import './css/Movie.css'
 
 function Movie({ card ,updateCaption }) {
 
@@ -12,9 +13,9 @@ function Movie({ card ,updateCaption }) {
         <div key={card.id}>
             <CardGroup style={{ display: "flex", justifyContent: "space-around" }}>
                 {
-                    <div key={card.id}>
+                    <div key={card.id} className="movieCard">
                         <Card key={card.id} >
-                            <Card.Img variant="top" src={card.poster_path} />
+                            <Card.Img variant="top" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${card.poster_path}`}/>
                             <Card.Body>
                                 <Card.Title>{card.title}</Card.Title>
                                 <Card.Text>

@@ -1,4 +1,7 @@
-*{
-    background-color: #161B22;
-    color: white;
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
