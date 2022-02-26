@@ -46,7 +46,7 @@ function FavList() {
         </div>
     )
 
-    useEffect([])
+    useEffect()
 }
 
 export default FavList;
