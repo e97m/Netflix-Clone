@@ -19,7 +19,7 @@ function FavList() {
         }
     }
 
-    useEffect(fetchData)
+    useEffect({fetchData}, []);
     // console.log(movies);
 
     return (
@@ -45,8 +45,6 @@ function FavList() {
             </main>
         </div>
     )
-
-    useEffect()
 }
 
 export default FavList;
