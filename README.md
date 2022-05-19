@@ -1,4 +1,4 @@
-# My Movies
+# Movies Clone
 
 **Author:** Emad Almajdalawi
 
@@ -10,4 +10,4 @@
 
 This website use an API for movies and import the trending ones from it using React, bootstrap, Heroku, and netlify.
 
-Visit the [website](https://festive-wiles-6f5221.netlify.app/)
+Visit the [website](https://movies-clone.netlify.app/)
